@@ -1,0 +1,21 @@
+Kyle Marcoux
+10/10/21
+Intro to Computer Security
+
+format: python3 fcrypt.py --option <public.pem or private.pem>  <source file>  <destination file>  
+Please use public.pem for encryption and private.pem for decryption
+
+Instructions using demo file:
+	To encrypt:  python3 fcrypt.py --encrypt public.pem secret.txt encrypted.txt
+	To decrypt:  python3 fcrypt.py --decrypt private.pem encrypted.txt decrypted.txt
+
+I was able to complete the assignment successfully and there will be a screenshot proving it
+included in the package.
+
+What this program will do:
+	Encryption:
+		- Take source file and encrypt it with AES encryption
+		- Encrypts AES key with RSA encryption using the public key file, and stores it as aes.text
+	Decryption:
+		- Takes private key file and decrypts the AES key
+		- Decrypts the source file
